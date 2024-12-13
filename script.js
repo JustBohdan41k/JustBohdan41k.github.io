@@ -10,3 +10,16 @@ function changeText(event) {
     window.location.href = event.currentTarget.href; 
 }
 
+function isMobile() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+    location.replace("unavailable.html");
+}
+
+setInterval(() => {
+    if (!isMobile() && location.pathname.endsWith("unavailable.html")) {
+        location.replace("index.html");
+    }
+}, 1000);
