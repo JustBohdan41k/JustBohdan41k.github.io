@@ -79,3 +79,46 @@ a {
     background: white;
     border: solid rgb(19, 19, 78);
 }
+summary {
+    background-color: rgb(19, 19, 78);
+    color: white;
+    font-family: sans-serif;
+    font-size: 34px;
+    width: 30%;
+    cursor: pointer;
+    padding: 10px 0 10px 0;
+    border: solid white;
+    border-radius: 15px;
+    font-weight: bolder;
+    transition: color 0.5s, background 0.5s, border 0.5s;
+}
+summary:hover {
+    color: rgb(19, 19, 78);
+    background: white;
+    border: solid rgb(19, 19, 78);
+}
+details {
+    font-size: 20px;
+}
+.links {
+    color: white;
+    background: rgb(19, 19, 78);
+    padding: 10px 20px 10px 20px;
+    border: solid white;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: color 0.5s, background 0.5s, border 0.5s;
+}
+.links:hover {
+    color: rgb(19, 19, 78);
+    background: white;
+    border: solid rgb(19, 19, 78);
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+  
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
