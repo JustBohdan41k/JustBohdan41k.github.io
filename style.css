@@ -1,300 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-h1 {
-  color: #ffffff;
-  font-family: "roboto";
-  text-align: center;
-  border-radius: 15px;
-  display: inline-block;
-  padding: 5px 15px 5px 15px;
-}
-
-#intro {
-  border-radius: 20px;
-  border: solid white;
-  color: #ffffffff;
-  background-color: rgb(27, 28, 69);
-  font-size: 20px;
-  text-align: center;
-  font-family: "Exo 2", sans-serif;
-  padding: 10px;
-  display: inline-block;
-}
-
-a {
-  font-size: 25px;
-  text-align: center;
-  font-family: "sans-serif";
-}
-
 body {
-  background: linear-gradient(to right, #0f013f, #090223);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,79,1) 50%, rgba(0,0,0,1) 100%); 
 }
-
-img {
-  height: 230px;
-  width: 400px;
-  border: solid white;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s;
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
 }
-
-h6 {
-  color: gray;
-  font-size: 15px;
-  text-align: center;
-  font-family: "roboto";
+.mainHeader {
+    margin-top: 100px;
 }
-
-h3 {
-  color: white;
-  font-family: "Josefin Sans", sans-serif;
+.welcome {
+    width: 50%;
+    height: 30%;
+    background-color: rgb(19, 19, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid white;
+    border-radius: 20px;
 }
-
-.playfair-display-<uniquifier> {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+.welcome p {
+    display: flex;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
 }
-
-.exo-2-<uniquifier> {
-  font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+a {
+    text-decoration: none;
+    font-family: sans-serif;
 }
-
-.baskervville-sc-regular {
-  font-family: "Baskervville SC", serif;
-  font-weight: 400;
-  font-style: normal;
+.gotomainpage {
+    color: white;
+    background: rgb(19, 19, 78);
+    padding: 30px 70px 30px 70px;
+    border: solid white;
+    border-radius: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: color 0.5s, background 0.5s, border 0.5s; 
 }
-
-.josefin-sans-<uniquifier> {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+.gotomainpage:hover {
+    color: rgb(19, 19, 78);
+    background: white;
+    border: solid rgb(19, 19, 78);
 }
-
-#pages {
-  height: 40px;
-  width: 60px;
-  background-color: rgb(27, 28, 69);
-  color: rgb(255, 255, 255);
-  border: solid;
-  border-radius: 12px;
-  font-family: "Exo 2", sans-serif;
-  transition: background-color 0.3s, color 0.3s;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 0px 10px 5px 10px;
-}
-
-.links {
-  font-size: 25px;
-  text-align: center;
-  font-family: "roboto";
-  background-color: rgb(27, 28, 69);
-  color: rgb(255, 255, 255);
-  border: solid white;
-  border-radius: 20px;
-  padding: 5px 10px 5px 10px;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
-  font-weight: bold;
-}
-
-#pages1 {
-  height: 40px;
-  width: 60px;
-  background-color: rgb(27, 28, 69);
-  color: aliceblue;
-  border: solid;
-  border-radius: 12px;
-  font-family: "Exo 2", sans-serif;
-  transition: background-color 0.3s, color 0.3s;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 0px 10px 5px 10px;
-}
-
-#siteIcon {
-  width: 235px;
-  height: 40px
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-div {
-  background-color: rgb(27, 28, 69);
-  border: solid white;
-  border-radius: 15px;
-  display: inline-block;
-  padding: 5px 40px 25px 40px;
-}
-
-.links:hover {
-  color: rgb(27, 28, 69);
-  background-color: white;
-}
-
-img:hover {
-  transform: scale(1.1);
-}
-
-.heading {
-  background-color: rgb(27, 28, 69);
-  border: solid white;
-  border-radius: 15px;
-  display: inline-block;
-  padding: 5px 40px 5px 40px;
-
-}
-
-#pages:hover {
-  color: rgb(27, 28, 69);
-  background-color: white;
-}
-
-#pages1:hover {
-  color: rgb(27, 28, 69);
-  background-color: white;
-}
-summary {
-  color: white;
-  background-color: rgb(27, 28, 69);
-  font-size: 30px;
-  border-radius: 15px;
-  cursor: pointer;
-  border: solid white;
-  font-weight: bold;
-  font-family: "roboto";
-  transition: color 0.3s;
-  transition: background-color 0.3s;
-}
-summary:hover{
-  color: rgb(27, 28, 69);
-  background-color: white;
-  text-align: center;
-}
-details {
-transition: height 3s ease-in;
-text-align: center;
-}
-details[open] summary ~ * {
-  animation: sweep .5s ease-in-out;
-}
-
-@keyframes sweep {
-  0%    {opacity: 0; margin-left: -10px}
-  100%  {opacity: 1; margin-left: 0px}
-}
-.logo {
-  height: 130px;
-  width: 130px;
-}
-.dt-main{
-  width:1420px;
-}
-.dt-h {
-  top:14px;
-  position: absolute;
-}
-.dt-s {
-  color: gray;
-  top:90px;
-  position: absolute;
-  left: 200px;
-}
-#dt-links {
-  position: absolute;
-  right: 50px;
-}
-.dt-desc {
-  color: white;
-  font-family: "roboto";
-}
-h2 {
-  color: white;
-  font-family: "roboto";
-}
-div ul {
-  color: white;
-  font-family: "roboto";
+.mainHeader {
+    width: 25%;
+    height: 10%;
+    background: rgb(19, 19, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white;
+    border-radius: 30px;
 }
