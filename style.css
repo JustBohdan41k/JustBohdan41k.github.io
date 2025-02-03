@@ -122,3 +122,32 @@ details[open] summary ~ * {
     0%    {opacity: 0; margin-left: -10px}
     100%  {opacity: 1; margin-left: 0px}
 }
+.updTime {
+    font-family: sans-serif;
+    color: rgb(163, 157, 157);
+}
+.info {
+    font-family: sans-serif;
+    color: white;
+    background: rgb(19, 19, 78);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 30%;
+    border: solid white;
+    border-radius: 10px;
+}
+.updates {
+    background: rgb(19, 19, 78);
+    border: solid white;
+    border-radius: 10px;
+    width: 40%;
+}
+.updHeader {
+    font-family: sans-serif;
+    color: white;
+}
+.updP {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
