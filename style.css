@@ -163,6 +163,7 @@ details[open] summary ~ * {
     font-family: sans-serif;
     color: white;
     font-size: 20px;
+    padding: 0 10px;
 }
 iframe {
     display: inline;
@@ -196,4 +197,10 @@ iframe {
 .watch:hover {
     background: white;
     color:rgb(19, 19, 78);
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    color: white;
 }
