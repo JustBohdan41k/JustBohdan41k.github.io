@@ -158,11 +158,12 @@ details[open] summary ~ * {
 .updHeader {
     font-family: sans-serif;
     color: white;
+    font-size: 25px;
 }
 .updP {
     font-family: sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 10px;
 }
 iframe {
@@ -203,4 +204,11 @@ ul {
 }
 ul li {
     color: white;
+    font-size: 15px;
+}
+.dscLink {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline 1px;
 }
