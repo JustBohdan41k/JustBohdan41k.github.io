@@ -1,214 +1,140 @@
+/*
+COLORS:
+    var(--secondary) - CYAN;
+    var(--primary) - WHITE
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+:root {
+    --secondary: #5C899D;
+    --primary: #FFFCEF;
+    --textcover: #d9d8d2;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,79,1) 50%, rgba(2,0,36,1) 100%); 
-}
-h1 {
-    font-family: sans-serif;
-    font-weight: bold;
-    color: white;
-}
-.welcome {
-    width: 50%;
-    height: 50%;
-    background-color: rgb(19, 19, 78);
+    min-height: 100vh;
+    background-color: var(--primary);
     display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    border: solid white;
+    width: auto;
+    background-color: var(--secondary);
+    margin: 10px;
+    padding-bottom: 30px;
+    padding-top: 20px;
     border-radius: 20px;
-    animation: fadeIn;
-    animation-duration: 1.5s;
-}
-.welcome p {
-    display: flex;
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-}
-a {
-    text-decoration: none;
-    font-family: sans-serif;
-}
-.gotomainpage {
-    color: white;
-    background: rgb(19, 19, 78);
-    padding: 30px 70px 30px 70px;
-    border: solid white;
-    border-radius: 30px;
-    font-size: 30px;
-    font-weight: bolder;
-    transition: color 0.5s, background 0.5s, border 0.5s; 
-    animation: fadeIn;
-    animation-duration: 1.5s;
-}
-.gotomainpage:hover {
-    color: rgb(19, 19, 78);
-    background: white;
-    border: solid rgb(19, 19, 78);
-}
-.mainHeader {
-    width: 25%;
-    padding: 20px 0 20px 0;
-    background: rgb(19, 19, 78);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid white;
-    border-radius: 30px;
-    margin-top: 100px;
-    animation: fadeIn;
-    animation-duration: 1.5s;
-}
-.mainHeader1 {
-    width: 25%;
-    padding: 20px 0 20px 0;
-    background: rgb(19, 19, 78);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid white;
-    border-radius: 30px;
-    margin-top: 60px;
-    animation: fadeIn;
-    animation-duration: 1.5s;
-}
-.goback {
-    color: white;
-    background: rgb(19, 19, 78);
-    padding: 10px 20px 10px 20px;
-    border: solid white;
-    border-radius: 15px;
-    font-weight: bold;
-    transition: color 0.5s, background 0.5s, border 0.5s;
-    animation: fadeIn;
-    animation-duration: 2s;
-}
-.goback:hover {
-    color: rgb(19, 19, 78);
-    background: white;
-    border: solid rgb(19, 19, 78);
-}
-summary {
-    background-color: rgb(19, 19, 78);
-    color: white;
-    font-family: sans-serif;
-    font-size: 25px;
-    width: 30%;
-    cursor: pointer;
-    padding: 10px 0 10px 0;
-    border: solid white;
-    border-radius: 15px;
-    font-weight: bolder;
-    transition: color 0.5s, background 0.5s, border 0.5s;
-}
-summary:hover {
-    color: rgb(19, 19, 78);
-    background: white;
-    border: solid rgb(19, 19, 78);
-}
-details {
-    font-size: 20px;
-    animation: fadeIn 1.5s;
-}
-.links {
-    color: white;
-    background: rgb(19, 19, 78);
-    padding: 10px 20px 10px 20px;
-    border: solid white;
-    border-radius: 15px;
-    font-weight: bold;
-    transition: color 0.5s, background 0.5s, border 0.5s;
-}
-.links:hover {
-    color: rgb(19, 19, 78);
-    background: white;
-    border: solid rgb(19, 19, 78);
-}
-details[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
-}
-  
-@keyframes sweep {
-    0%    {opacity: 0; margin-left: -10px}
-    100%  {opacity: 1; margin-left: 0px}
-}
-.updTime {
-    font-family: sans-serif;
-    color: rgb(163, 157, 157);
-}
-.info {
-    font-family: sans-serif;
-    color: white;
-    background: rgb(19, 19, 78);
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 30%;
-    border: solid white;
-    border-radius: 10px;
-}
-.updates {
-    background: rgb(19, 19, 78);
-    border: solid white;
-    border-radius: 10px;
-    width: 40%;
-    height: auto;
-    padding: 20px 0px;
-}
-.updHeader {
-    font-family: sans-serif;
-    color: white;
-    font-size: 25px;
-}
-.updP {
-    font-family: sans-serif;
-    color: white;
-    font-size: 15px;
-    padding: 0 10px;
-}
-iframe {
-    display: inline;
-}
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 560px;
-    aspect-ratio: 16 / 9;
-    margin: 0 auto;
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-.watch {
-    background: rgb(19, 19, 78);
-    padding: 10px 20px;
-    border: solid white;
-    border-radius: 15px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    transition: background 0.5s, color 0.5s;
-}
-.watch:hover {
-    background: white;
-    color:rgb(19, 19, 78);
-}
 ul {
+    display: flex;
     list-style-type: none;
+    gap: 100px;
+    padding: 0;
+    margin: 0;
 }
-ul li {
-    color: white;
-    font-size: 15px;
-}
-.dscLink {
-    color: white;
+li a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 25px;
+    color: var(--primary);
+    transition: color 0.3s;
     font-weight: bold;
-    cursor: pointer;
-    text-decoration: underline 1px;
+    font-family: "Racing Sans One", sans-serif;
+    font-style: normal;
+}
+h1 {
+    display: flex;
+    align-self: center;
+}
+header h1 {
+    margin-left: 15px;
+    color: var(--primary);
+    font-family: "Contrail One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    user-select: none;
+}
+li a:hover {
+    color: var(--textcover);
+}
+.wlcm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.wlcm h1 {
+    color: var(--secondary);
+    font-family: "Contrail One", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+}
+.wlcm p {
+    color: var(--secondary);
+    font-family: "Racing Sans One", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+.mainpage {
+    overflow: hidden;
+}
+.proj {
+    background-color: var(--secondary);
+    padding: 20px 50px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--primary);
+    font-family: "Racing Sans One", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    border-radius: 15px;
+    transition: color 0.3s;
+}
+.proj:hover {
+    color: var(--textcover);
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.links a {
+    /*justify-content: center;*/
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 1rem;
+    background-color: var(--secondary);
+    margin: 10px 10px 1rem 10px;
+    padding: 15px 0;
+    border-radius: 20px;
+    font-size: 20px;
+}
+footer p {
+    color: var(--primary);
+    font-family: "Racing Sans One", sans-serif;
+    font-style: normal;
 }
