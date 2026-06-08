@@ -17,7 +17,7 @@ COLORS:
     padding: 0;
 }
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
@@ -113,11 +113,9 @@ li a:hover {
     gap: 20px;
 }
 .links a {
-    /*justify-content: center;*/
     margin-top: 10px;
     text-decoration: none;
-    color: white;
-    
+    color: var(--primary) !important;
 }
 footer {
     display: flex;
@@ -137,4 +135,30 @@ footer p {
     color: var(--primary);
     font-family: "Racing Sans One", sans-serif;
     font-style: normal;
+}
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: сenter;
+    }
+    .row {
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    .menu-btn {
+        display: flex;
+        font-style: "Contrail One", sans-serif;
+    }
 }
