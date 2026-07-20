@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatAI - Meow anything</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>CatAI</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><i class="fa-solid fa-arrow-left"></i> Back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wlcm">
+        <h1 class="animate__animated animate__fadeInDown welcome">Welcome!</h1>
+        <p class="animate__animated animate__fadeInDown whatisthis">CatAI is a pseudo-intelligent chatbot that responds like a cat. <br> Ask him anything you want!</p>
+    </div>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will be appended here -->
+        </div>
+    </div>
+    <div class="input">
+        <input type="text" id="user-input" placeholder="Type your message here..." autofocus>
+        <button id="send-btn"><i class="fa-solid fa-paper-plane"></i> Send</button>
+    </div>
+</body>
+</html>
