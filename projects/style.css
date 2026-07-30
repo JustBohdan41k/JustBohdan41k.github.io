@@ -15,7 +15,6 @@ COLORS:
 * {
     margin: 0;
     padding: 0;
-}
 body {
     min-height: 100dvh;
     background-color: var(--primary);
@@ -151,4 +150,4 @@ li .projLink {
         display: flex;
         font-family: "Contrail One", sans-serif;
     }
-}
+}}
