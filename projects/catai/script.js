@@ -30,10 +30,14 @@ function addCatMessage() {
 document.addEventListener("DOMContentLoaded", () => {
     inputField.placeholder = placeholders[Math.floor(Math.random() * placeholders.length)];
     sendButton.addEventListener("click", () => {
-        addMessage();
-        setTimeout(() => {
-            addCatMessage();
-            sendButton.classList.remove("disabled");
-        }, 3000);
+        if (inputField.value.length > 0) {
+            addMessage();
+            setTimeout(() => {
+                addCatMessage();
+                sendButton.classList.remove("disabled");
+                inputField.value = "";
+            }, 3000);
+        }
+
     });
 });
